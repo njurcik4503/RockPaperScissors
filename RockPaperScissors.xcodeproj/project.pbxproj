@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9BCBD0C925FFF07B00A2C661 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BCBD0C825FFF07B00A2C661 /* SecondViewController.swift */; };
 		9BF1FECA25FABBB6007D8AA0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1FEC925FABBB6007D8AA0 /* AppDelegate.swift */; };
 		9BF1FECC25FABBB6007D8AA0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1FECB25FABBB6007D8AA0 /* SceneDelegate.swift */; };
 		9BF1FECE25FABBB6007D8AA0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF1FECD25FABBB6007D8AA0 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9BCBD0C825FFF07B00A2C661 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		9BF1FEC625FABBB6007D8AA0 /* RockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BF1FEC925FABBB6007D8AA0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9BF1FECB25FABBB6007D8AA0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				9BF1FECB25FABBB6007D8AA0 /* SceneDelegate.swift */,
 				9BF1FECD25FABBB6007D8AA0 /* ViewController.swift */,
 				9BF1FECF25FABBB6007D8AA0 /* Main.storyboard */,
+				9BCBD0C825FFF07B00A2C661 /* SecondViewController.swift */,
 				9BF1FED225FABBB7007D8AA0 /* Assets.xcassets */,
 				9BF1FED425FABBB7007D8AA0 /* LaunchScreen.storyboard */,
 				9BF1FED725FABBB7007D8AA0 /* Info.plist */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BCBD0C925FFF07B00A2C661 /* SecondViewController.swift in Sources */,
 				9BF1FECE25FABBB6007D8AA0 /* ViewController.swift in Sources */,
 				9BF1FECA25FABBB6007D8AA0 /* AppDelegate.swift in Sources */,
 				9BF1FECC25FABBB6007D8AA0 /* SceneDelegate.swift in Sources */,

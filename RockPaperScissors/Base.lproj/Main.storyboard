@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="83l-jh-U46">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -61,6 +61,20 @@
                                     <outletCollection property="gestureRecognizers" destination="GwJ-Of-seg" appends="YES" id="Ogf-ui-iOX"/>
                                 </connections>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Enh-R1-F1W">
+                                <rect key="frame" x="186" y="569" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etU-0T-sEG">
+                                <rect key="frame" x="186" y="360" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -72,38 +86,22 @@
                     </view>
                     <navigationItem key="navigationItem" id="85Q-l1-Y2P"/>
                     <connections>
-                        <outlet property="paper" destination="NDT-cs-8jP" id="H7C-Rr-agS"/>
-                        <outlet property="rock" destination="3xV-UT-K2u" id="px0-H7-IJ2"/>
-                        <outlet property="scissors" destination="pHd-sR-27y" id="ygl-Sm-slE"/>
-                        <outlet property="stackView" destination="mQA-64-5Rx" id="xAk-dO-iHG"/>
+                        <outlet property="label" destination="etU-0T-sEG" id="Fmn-VH-YHk"/>
+                        <outlet property="label2" destination="Enh-R1-F1W" id="QJe-TY-hJe"/>
+                        <outlet property="stackView" destination="mQA-64-5Rx" id="YIy-XE-OvO"/>
+                        <outletCollection property="imageView" destination="3xV-UT-K2u" collectionClass="NSMutableArray" id="x0h-NB-0Dd"/>
+                        <outletCollection property="imageView" destination="NDT-cs-8jP" collectionClass="NSMutableArray" id="zMj-iv-VFK"/>
+                        <outletCollection property="imageView" destination="pHd-sR-27y" collectionClass="NSMutableArray" id="dBV-jH-sYD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="GwJ-Of-seg">
                     <connections>
-                        <action selector="whenTappedRecognized:" destination="BYZ-38-t0r" id="Yye-BN-LE5"/>
+                        <action selector="whenTappedRecognized:" destination="BYZ-38-t0r" id="Mor-1F-4R3"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="115.84821428571428"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="PwS-PA-qBY">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="83l-jh-U46" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wml-Pr-WPo">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="X6L-Yz-QN3"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4WT-QI-amt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
         </scene>
     </scenes>
     <resources>

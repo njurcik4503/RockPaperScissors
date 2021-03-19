@@ -9,19 +9,33 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var rock: UIImageView!
-    @IBOutlet weak var paper: UIImageView!
-    @IBOutlet weak var scissors: UIImageView!
+    
+    @IBOutlet var imageView: [UIImageView]!
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var stackView: UIStackView!
+    
+    var counter = 0
+    var imageview: String!
+    var images:[String] = ["Rock", "Paper", "Scissors"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        imageview = images[counter]
+        label.text = imageview
+        label2.text = imageview
+        
     }
     
-    @IBAction func whenTappedRecognized(_ sender: Any) {
-}
+   
+    @IBAction func whenTappedRecognized(_ sender: UITapGestureRecognizer) {
+        let selectedPoint = sender.location(in: stackView)
+        print(selectedPoint)
     
+    
+    }
+
+
 }
 
